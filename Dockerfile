@@ -210,7 +210,6 @@ autocmd FileType vim setlocal foldmethod=marker \n\
 " >> ~/.config/nvim/init.vim
 
 RUN vim +'PlugInstall --sync' +qa
-RUN vim +'CocConfig --sync' +qa
 
 RUN echo "\
 {\n\
@@ -227,5 +226,5 @@ RUN echo "\
   } \n\
 } \n\
 } \n\
-" > ~/.config/coc/coc-settings.json
+" > ~/.config/coc.json
 
